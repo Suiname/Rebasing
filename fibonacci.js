@@ -1,8 +1,8 @@
 function fibonacci(num){
 	if (typeof num !== 'number') {
-		return 'Nope';
+		throw new Error('Nope');
 	} else if (num < 0 ) {
-		return 'Less than zero';
+		throw new Error('Less than zero');
 	} 
 
 	var a = 1, b = 0, temp;
