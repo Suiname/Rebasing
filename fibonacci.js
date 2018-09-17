@@ -1,4 +1,5 @@
-function fibonacci(num){
+function fibonacci(num, memo){
+	memo = memo || {};
 	var a = 1, b = 0, temp;
   
 	while (num >= 0){
